@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #222;
+    height: 10vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.logo {
+    width: 200px;
+    height: 110px;
+}
+
+.person {
+    margin-top: 1vh;
+    width: 60px;
+    height: 60px;
+}
+
+.compras {
+    margin-top: 2vh;
+    width: 55px;
+    height: 50px;
+}
+.links{
+    margin-top: 4vh;
+}
+.mobile-menu {
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.skyDarkCasaco {
+    width: 588px;
+    height: 356px;
+    border-radius: 20px;
+}
+
+.skyPinkCasaco {
+    width: 588px;
+    height: 356px;
+    border-radius: 20px;
+}
+
+.containerCasacos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    column-gap: 9vh;
+}
+
+.casacoPreto {
+    width: 345px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: -6px 10px 6px 5px rgba(0, 0, 0, 0.25);
+}
+.casacoBranco {
+    width: 345px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: -6px 10px 6px 5px rgba(0, 0, 0, 0.25);
+}
+.casacoRoxo {
+    width: 345px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: -6px 10px 6px 5px rgba(0, 0, 0, 0.25);
+}
+
+
+body {
+    background-color: #222;
+}
+
+@media (max-width: 1250px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .skyDarkCasaco {
+        width: 588px;
+        height: 356px;
+        border-radius: 20px;
+    }
+    
+    .skyPinkCasaco {
+        width: 588px;
+        height: 356px;
+        border-radius: 20px;
+    }
+    
+    .containerCasacos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        gap: 5vh;
+    }
+    
+    .casacoPreto {
+        width: 450px;
+        height: 380px;
+        border-radius: 20px;
+        box-shadow: -6px 10px 6px 5px rgba(0, 0, 0, 0.25);
+    }
+    .casacoBranco {
+        width: 450px;
+        height: 380px;
+        border-radius: 20px;
+        box-shadow: -6px 10px 6px 5px rgba(0, 0, 0, 0.25);
+    }
+    .casacoRoxo {
+        width: 450px;
+        height: 380px;
+        border-radius: 20px;
+        box-shadow: -6px 10px 6px 5px rgba(0, 0, 0, 0.25);
+    }
+    
+}
+
+@media (max-width: 390px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .skyDarkCasaco {
+        width: 320px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    
+    .skyPinkCasaco {
+        width: 320px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    
+    .containerCasacos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        gap: 5vh;
+        margin-bottom: 30px;
+    }
+    
+    .casacoPreto {
+        width: 280px;
+        height: 240px;
+        border-radius: 20px;
+        box-shadow: -6px 10px 6px 5px rgba(0, 0, 0, 0.25);
+    }
+    .casacoBranco {
+        width: 280px;
+        height: 240px;
+        border-radius: 20px;
+        box-shadow: -6px 10px 6px 5px rgba(0, 0, 0, 0.25);
+    }
+    .casacoRoxo {
+        width: 280px;
+        height: 240px;
+        border-radius: 20px;
+        box-shadow: -6px 10px 6px 5px rgba(0, 0, 0, 0.25);
+    }
+    
+}
+
+
+@media (max-width: 865px) {
+    
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 40vw;
+        height: 92vh;
+        background-color: #222;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+    .person{
+        width: 60px;
+        height: 60px;
+    }
+ 
+    .compras {
+        width: 55px;
+        height: 55px;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .nav-list.active {
+        transform: translateX(0);
+    }
+
+    .logo {
+        width: 120px;
+        height: 60px;
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
