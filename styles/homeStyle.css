@@ -167,7 +167,68 @@ body {
     
 }
 
+@media (max-width: 850px) {
+
+    body {
+        overflow-x: hidden;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .skyDarkCasaco {
+        width: 320px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    
+    .skyPinkCasaco {
+        width: 320px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    
+    .containerCasacos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        gap: 5vh;
+        margin-bottom: 30px;
+    }
+    
+    .casacoPreto {
+        width: 280px;
+        height: 240px;
+        border-radius: 20px;
+        box-shadow: -6px 10px 6px 5px rgba(0, 0, 0, 0.25);
+    }
+    .casacoBranco {
+        width: 280px;
+        height: 240px;
+        border-radius: 20px;
+        box-shadow: -6px 10px 6px 5px rgba(0, 0, 0, 0.25);
+    }
+    .casacoRoxo {
+        width: 280px;
+        height: 240px;
+        border-radius: 20px;
+        box-shadow: -6px 10px 6px 5px rgba(0, 0, 0, 0.25);
+    }
+    
+}
+
+
 @media (max-width: 390px) {
+    
+    body {
+        overflow-x: hidden;
+    }
 
     .container {
         display: flex;
