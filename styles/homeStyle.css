@@ -128,8 +128,6 @@ nav {
     margin-bottom: 50px;
 }
 
-
-
 .casacoPreto {
     width: 310px;
     height: 315px;
@@ -415,7 +413,7 @@ nav {
 
 
 
-@media (max-width: 390px) {
+@media (max-width: 440px) {
     
     body {
         overflow-x: hidden;
