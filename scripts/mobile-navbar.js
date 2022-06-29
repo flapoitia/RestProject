@@ -42,3 +42,4 @@ const mobileNavBar = new MobileNavbar (
 )
 
 mobileNavBar.init()
+

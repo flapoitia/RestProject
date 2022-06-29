@@ -7,11 +7,16 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #222;
+}
+
 a {
     color: white;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     align-items: center;
+    font-weight: 500;
 }
 
 nav {
@@ -33,29 +38,39 @@ nav {
 
 .nav-list li {
     letter-spacing: 3px;
-    margin-left: 32px;
+    margin-left: 26px;
 }
 
 .logo {
+    margin-top: 1.5rem;
     width: 200px;
     height: 110px;
 }
 
 .person {
     margin-top: 1vh;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
 }
 
 .compras {
     margin-top: 2vh;
-    width: 55px;
-    height: 50px;
+    width: 40px;
+    height: 45px;
 }
 .links{
     margin-top: 4vh;
 }
+
+.links a {
+    transition: 1s ease-in-out;
+}
+
+.links a:hover{
+    color: #86ffff;
+}
 .mobile-menu {
+    margin-top: 1rem;
     cursor: pointer;
     display: none;
 }
@@ -77,14 +92,14 @@ nav {
 }
 
 .skyDarkCasaco {
-    width: 588px;
-    height: 356px;
+    width: 540px;
+    height: 320px;
     border-radius: 20px;
 }
 
 .skyPinkCasaco {
-    width: 588px;
-    height: 356px;
+    width: 540px;
+    height: 320px;
     border-radius: 20px;
 }
 
@@ -92,32 +107,99 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 50px;
     column-gap: 9vh;
 }
 
+.containerCasacos2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    column-gap: 9vh;
+}
+
+.containerCasacos3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    column-gap: 9vh;
+    margin-bottom: 50px;
+}
+
+
+
 .casacoPreto {
-    width: 345px;
-    height: 350px;
+    width: 310px;
+    height: 315px;
     border-radius: 20px;
     box-shadow: -6px 10px 6px 5px rgba(0, 0, 0, 0.25);
 }
 .casacoBranco {
-    width: 345px;
-    height: 350px;
+    width: 310px;
+    height: 315px;
     border-radius: 20px;
     box-shadow: -6px 10px 6px 5px rgba(0, 0, 0, 0.25);
 }
 .casacoRoxo {
-    width: 345px;
-    height: 350px;
+    width: 310px;
+    height: 315px;
     border-radius: 20px;
     box-shadow: -6px 10px 6px 5px rgba(0, 0, 0, 0.25);
 }
 
+.nameCasaco {
+    margin-top: 0.4rem;
+    display: flex;
+    justify-content: center;
+}
 
-body {
-    background-color: #222;
+.nameCasaco p{
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.priceCasaco {
+    margin-left: 30px;
+    margin-top: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.comprar{
+    margin-left: 10px;
+    opacity: 1;
+    border: 2px solid #86ffff;
+    border-radius: 20px;
+    transition: 500ms ease-in-out;
+    padding: 5px;
+}
+
+.comprar:hover {
+    background-color: #86ffff;
+    color: #222;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #222;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #86ffff;
+    border-radius: 30px;
 }
 
 @media (max-width: 1250px) {
@@ -150,54 +232,7 @@ body {
         margin-top: 30px;
         gap: 5vh;
     }
-    
-    .casacoPreto {
-        width: 450px;
-        height: 380px;
-        border-radius: 20px;
-        box-shadow: -6px 10px 6px 5px rgba(0, 0, 0, 0.25);
-    }
-    .casacoBranco {
-        width: 450px;
-        height: 380px;
-        border-radius: 20px;
-        box-shadow: -6px 10px 6px 5px rgba(0, 0, 0, 0.25);
-    }
-    .casacoRoxo {
-        width: 450px;
-        height: 380px;
-        border-radius: 20px;
-        box-shadow: -6px 10px 6px 5px rgba(0, 0, 0, 0.25);
-    }
-    
-}
-
-@media (max-width: 850px) {
-
-    body {
-        overflow-x: hidden;
-    }
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    }
-    
-    .skyDarkCasaco {
-        width: 320px;
-        height: 200px;
-        border-radius: 20px;
-    }
-    
-    .skyPinkCasaco {
-        width: 320px;
-        height: 200px;
-        border-radius: 20px;
-    }
-    
-    .containerCasacos {
+    .containerCasacos2 {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -206,65 +241,8 @@ body {
         gap: 5vh;
         margin-bottom: 30px;
     }
-    
-    .casacoPreto {
-        width: 280px;
-        height: 240px;
-        border-radius: 20px;
-        box-shadow: -6px 10px 6px 5px rgba(0, 0, 0, 0.25);
-    }
-    .casacoBranco {
-        width: 280px;
-        height: 240px;
-        border-radius: 20px;
-        box-shadow: -6px 10px 6px 5px rgba(0, 0, 0, 0.25);
-    }
-    .casacoRoxo {
-        width: 280px;
-        height: 240px;
-        border-radius: 20px;
-        box-shadow: -6px 10px 6px 5px rgba(0, 0, 0, 0.25);
-    }
-    .person {
-        width: 45px;
-        height: 45px;
-    }
-    
-    .compras {
-        width: 30px;
-        height: 35px;
-    }
-    
-}
 
-
-@media (max-width: 390px) {
-    
-    body {
-        overflow-x: hidden;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    }
-    
-    .skyDarkCasaco {
-        width: 320px;
-        height: 200px;
-        border-radius: 20px;
-    }
-    
-    .skyPinkCasaco {
-        width: 320px;
-        height: 200px;
-        border-radius: 20px;
-    }
-    
-    .containerCasacos {
+    .containerCasacos3 {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -273,33 +251,29 @@ body {
         gap: 5vh;
         margin-bottom: 30px;
     }
-    
+
     .casacoPreto {
-        width: 280px;
-        height: 240px;
+        width: 450px;
+        height: 380px;
         border-radius: 20px;
         box-shadow: -6px 10px 6px 5px rgba(0, 0, 0, 0.25);
     }
     .casacoBranco {
-        width: 280px;
-        height: 240px;
+        width: 450px;
+        height: 380px;
         border-radius: 20px;
         box-shadow: -6px 10px 6px 5px rgba(0, 0, 0, 0.25);
     }
     .casacoRoxo {
-        width: 280px;
-        height: 240px;
+        width: 450px;
+        height: 380px;
         border-radius: 20px;
         box-shadow: -6px 10px 6px 5px rgba(0, 0, 0, 0.25);
     }
-    .person {
-        width: 45px;
-        height: 45px;
-    }
-    
-    .compras {
-        width: 30px;
-        height: 35px;
+
+    .addCart {
+        opacity: 0;
+        width: 0;
     }
     
 }
@@ -348,10 +322,187 @@ body {
     }
 
     .logo {
-        width: 120px;
-        height: 60px;
+        width: 180px;
+        height: 90px;
     }
 }
+
+@media (max-width: 660px) {
+    
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .skyDarkCasaco {
+        width: 420px;
+        height: 275px;
+        border-radius: 20px;
+    }
+    
+    .skyPinkCasaco {
+        width: 420px;
+        height: 290px;
+        border-radius: 20px;
+    }
+    
+    .containerCasacos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        gap: 5vh;
+        margin-bottom: 30px;
+    }
+
+    .containerCasacos2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        gap: 5vh;
+        margin-bottom: 30px;
+    }
+
+    .containerCasacos3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        gap: 5vh;
+        margin-bottom: 30px;
+    }
+
+    
+    .casacoPreto {
+        width: 380px;
+        height: 320px;
+        border-radius: 20px;
+        box-shadow: -6px 10px 6px 5px rgba(0, 0, 0, 0.25);
+    }
+    .casacoBranco {
+        width: 380px;
+        height: 320px;
+        border-radius: 20px;
+        box-shadow: -6px 10px 6px 5px rgba(0, 0, 0, 0.25);
+    }
+    .casacoRoxo {
+        width: 380px;
+        height: 320px;
+        border-radius: 20px;
+        box-shadow: -6px 10px 6px 5px rgba(0, 0, 0, 0.25);
+    }
+    .person {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .compras {
+        width: 30px;
+        height: 35px;
+    }
+}
+
+
+
+@media (max-width: 390px) {
+    
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .skyDarkCasaco {
+        width: 320px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    
+    .skyPinkCasaco {
+        width: 320px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    
+    .containerCasacos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        gap: 5vh;
+        margin-bottom: 30px;
+    }
+
+    .containerCasacos2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        gap: 5vh;
+        margin-bottom: 30px;
+    }
+
+    .containerCasacos3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        gap: 5vh;
+        margin-bottom: 30px;
+    }
+
+
+    
+    .casacoPreto {
+        width: 280px;
+        height: 240px;
+        border-radius: 20px;
+        box-shadow: -6px 10px 6px 5px rgba(0, 0, 0, 0.25);
+    }
+    .casacoBranco {
+        width: 280px;
+        height: 240px;
+        border-radius: 20px;
+        box-shadow: -6px 10px 6px 5px rgba(0, 0, 0, 0.25);
+    }
+    .casacoRoxo {
+        width: 280px;
+        height: 240px;
+        border-radius: 20px;
+        box-shadow: -6px 10px 6px 5px rgba(0, 0, 0, 0.25);
+    }
+    .person {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .compras {
+        width: 30px;
+        height: 35px;
+    }
+    
+}
+
 
 .mobile-menu.active .line1 {
     transform: rotate(-45deg) translate(-8px, 8px);
